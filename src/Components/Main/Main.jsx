@@ -31,7 +31,7 @@ export default function Main() {
         </div>
       </div>
       <div class="hero-curve">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
           <path
             fill="#495e57"
             fill-opacity="1"
@@ -110,7 +110,7 @@ export default function Main() {
       </section>
 
       <div class="reviews-curve">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
           <path
             fill="#495e57"
             fill-opacity="1"
@@ -145,15 +145,17 @@ export default function Main() {
               </div>
             </div>
           </div>
+          <div class="line"></div>
           <div className="footer-socials">
             <div className="copyRights">
               <h1>
-                © Copyright 2024 Powered By{" "}
+                © Copyright 2024 Powered By
                 <a href="https://www.linkedin.com/in/abderaouf-khamoum-657527260/">
                   Khamoum Abderraouf
-                </a>{" "}
+                </a>
               </h1>
             </div>
+
             <div className="socialMedia">
               <div className="facebook">
                 <NavLink className="">
