@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.jpg";
+import "./Header.css";
+
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
