@@ -3,6 +3,7 @@ import "./Header.css";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 import "./Header.css";
+import Headroom from "react-headroom";
 
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);

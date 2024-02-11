@@ -1,14 +1,16 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import Hero from "../Components/HomePage/Hero";
 import Order from "../Components/HomePage/Order";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
+import Headroom from "react-headroom";
 
-export default function Main() {
+export default function Home() {
   return (
     <>
-      <Header />
+      <Headroom>
+        <Header />
+      </Headroom>
       <Hero />
       <Order />
       <Footer />

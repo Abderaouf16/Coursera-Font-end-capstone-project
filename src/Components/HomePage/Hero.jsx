@@ -16,7 +16,7 @@ export default function Hero() {
                 We are a family owned Mediterranean restaurant, focused on
                 traditional recipes served with a modern twist.
               </p>
-              <NavLink to="/">
+              <NavLink to="/ReserveTable">
                 <button className="">Reserve a Table</button>
               </NavLink>
             </div>
