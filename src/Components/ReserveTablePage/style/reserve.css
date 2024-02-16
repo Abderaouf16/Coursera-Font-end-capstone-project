@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@500&family=Style+Script&display=swap");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --col-green: #495e57;
+  --col-yellow: #f4ce14;
+  --col-grey: #d9d9d9;
+  --col-blue: #4454eb;
+  --col-dark: #333333;
+  --col-red: #c32300;
+}
+
+@media (max-width:600px) {
+.reserve-container{
+background-color: #4454eb;
+width: 90vw;
+
+margin:2rem auto;
+
+display: flex;
+flex-direction: column;
+
+}
+
+.restaurantTable{
+    flex: 1;
+    justify-content: center;
+background-color: #c32300;
+justify-content: center;
+}
+form{
+  display: flex;
+  background-color: #495e57;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  border-radius: 15px;
+}
+.reserve-form{
+    display: none;
+    flex: 1;
+background-color: chartreuse;
+}
+
+
+}
