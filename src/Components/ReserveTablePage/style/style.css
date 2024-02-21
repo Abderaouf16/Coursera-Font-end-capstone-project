@@ -1,6 +1,6 @@
 input {
   padding: 12px;
-  margin: 10px 0px;
+
 }
 label {
   font-size: 12px;
@@ -8,18 +8,16 @@ label {
 span {
   display: none;
   font-size: 12px;
-  padding: 3px;
+  margin: 7px;
   color: red;
 }
 
-input:invalid ~ span {
-  display: block;
-}
 
 input:invalid[focused="true"] {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 
-input:invalid[focosed="true"] ~ span {
+
+input:invalid[focused="true"] ~ span{
   display: block;
 }

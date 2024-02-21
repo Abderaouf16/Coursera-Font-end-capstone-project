@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./style/reserve.css";
 import FormInput from "./formInput";
 import { Select } from "@chakra-ui/react";
+import tableImg1 from '../assets/resTable1.png'
+import tableImg2 from '../assets/resTable2.png'
+
 
 export default function reserve() {
   const [values, setValues] = useState({
@@ -19,7 +22,7 @@ export default function reserve() {
       name: "username",
       type: "text",
       placeholder: "Username",
-      label: "Username",
+      label: "Username:",
       pattern: "^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$",
       required: true,
       errorMessage:
@@ -31,7 +34,7 @@ export default function reserve() {
       type: "email",
       placeholder: "Email",
       errorMessage: "It should be a valid email address!",
-      label: "Email",
+      label: "Email:",
       required: true,
       pattern: "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$",
     },
@@ -40,7 +43,7 @@ export default function reserve() {
       name: "date&time",
       type: "date",
       placeholder: "Username",
-      label: "Date & Time",
+      label: "Date & Time:",
       required: true,
       errorMessage:
         "You should select a date time to your reservation",
@@ -48,20 +51,20 @@ export default function reserve() {
     {
       id: 4,
       name: "Telephone",
-      type: "tel",
+      type: "text",
       placeholder: "123-45-678",
-      label: "Telephone",
-      pattern: "[0-9]{3}-[0-9]{2}-[0-9]{3}",
+      label: "Telephone:",
+      pattern: "^[0-9]+$",
       required: true,
       errorMessage:
-        "Telephone should be only numbers and shouldn't include any special character!",
+        "You should provide a valid phone number",
     },
     {
       id: 5,
       name: "Seats",
       type: "text",
       placeholder: "Seats",
-      label: "Seats",
+      label: "Seats:",
       pattern: "^[0-9]",
       required: true,
       errorMessage:
@@ -71,7 +74,7 @@ export default function reserve() {
         id: 7, // Choose a unique id for the dropdown
         name: "occation",
         type: "select",
-        label: "occation",
+        label: "occation (Optionel):",
         options: [
           { value: "Birthday", label: "Birthday" },
           { value: "Engagement", label: "Engagement" },
@@ -92,9 +95,14 @@ export default function reserve() {
     <>
       <section>
         <div className="reserve-container">
-          <div className="restaurantTable">
+        <div className="reserve-form">
+            <img className='tableImg' src={tableImg1} alt="" />
+            <img className='tableImg' src={tableImg2} alt="" />
+
+          </div>
+          <div className=" restaurantTable">
             <form onSubmit={handeleSubmit}>
-              <h1 className=" p-5 my-5   text-3xl  font-bold ">
+              <h1 className="  sm:(p-5 my-5 text-xl )    font-bold ">
                 Reserve a Table
               </h1>
              
@@ -103,7 +111,7 @@ export default function reserve() {
                <>
                   {input.type === "select" ? (
                     <div className="w-10/12">
-                        <label htmlFor={input.id} className="text-xl font-medium">{input.label}</label>
+                        <label htmlFor={input.id} className=" text-sm font-medium">{input.label}</label>
                     
                     <Select
                       className="w-full rounded my-5 p-4"
@@ -129,12 +137,12 @@ export default function reserve() {
              </>
               ))}
 
-              <button className="p-4 my-5  text-2xl  font-bold   bg-yellow-300 w-10/12   rounded ">
+              <button className="  text-black p-3 my-5  text-xl  font-bold   bg-yellow-300 w-10/12   rounded ">
                 Submit
               </button>
             </form>
           </div>
-          <div className="reserve-form"></div>
+          
         </div>
       </section>
     </>

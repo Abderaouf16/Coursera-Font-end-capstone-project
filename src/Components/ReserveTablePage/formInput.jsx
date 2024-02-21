@@ -12,13 +12,14 @@ export default function formInput(props) {
   }
   return (
     <>
-    <div className="w-10/12 flex flex-col">
-      <label className=" text-xl font-medium " >{label}</label>
+    <div className="  w-10/12 flex flex-col">
+      <label className="  text-base font-medium " >{label}</label>
       <input 
       {...inputProps}
       onChange={onChange}
-      className="w-full rounded my-5 p-4"
-      
+      className="w-full rounded my-5 p-3 "
+      focused={focused.toString()}
+      onBlur={handeleFocused}
       />
 
       <span className='  text-base text-red-400'>{errorMessage}</span>

@@ -15,14 +15,44 @@
   --col-red: #c32300;
 }
 
+.reserve-container{
+  width: 70vw;
+  
+  margin:2rem auto;
+  
+  display: flex;
+  
+  }
+
+
+  .restaurantTable{
+    flex: 1;
+    justify-content: center;
+justify-content: center;
+border-radius: 15px;
+
+}
+form{
+  display: flex;
+  background-color: #495e57;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  border-radius: 15px;
+  
+}
+.reserve-form{
+flex: 1;
+}
+
+
 @media (max-width:600px) {
 .reserve-container{
-background-color: #4454eb;
 width: 90vw;
 
 margin:2rem auto;
 
-display: flex;
 flex-direction: column;
 
 }
@@ -30,7 +60,6 @@ flex-direction: column;
 .restaurantTable{
     flex: 1;
     justify-content: center;
-background-color: #c32300;
 justify-content: center;
 }
 form{
@@ -41,12 +70,54 @@ form{
   height: 100%;
   justify-content: center;
   border-radius: 15px;
+  
 }
 .reserve-form{
     display: none;
+    
+}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  /* Your styles go here */
+  .reserve-container{
+    width: 70vw;
+    
+    }
+    .reserve-form{
+      display: none;
+      
+  }
+}
+
+@media (min-width:1000px){
+
+  .reserve-container{
+    width: 80vw;
+    
+    margin:2rem auto;
+    
+    display: flex;
+    
+    }
+  .restaurantTable{
     flex: 1;
-background-color: chartreuse;
+  
+
+}
+.reserve-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
 }
 
 
-}
+  
+
+
+
+  
+ 
