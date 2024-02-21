@@ -102,7 +102,7 @@ export default function reserve() {
           </div>
           <div className=" restaurantTable">
             <form onSubmit={handeleSubmit}>
-              <h1 className="  sm:(p-5 my-5 text-xl )    font-bold ">
+              <h1 className=" text-yellow-400  sm:(p-5 my-5 text-xl )    font-bold ">
                 Reserve a Table
               </h1>
              
@@ -110,18 +110,18 @@ export default function reserve() {
              {inputs.map((input) => (
                <>
                   {input.type === "select" ? (
-                    <div className="w-10/12">
-                        <label htmlFor={input.id} className=" text-sm font-medium">{input.label}</label>
+                    <div className=" my-5 w-10/12">
+                        <label htmlFor={input.id} className=" text-white text-base font-medium ">{input.label}</label>
                     
                     <Select
-                      className="w-full rounded my-5 p-4"
+                      className= " mt-5  cursor-pointer w-full rounded p-4"
                       placeholder={input.label}
                       value={values[input.name]}
                       onChange={onChange}
                       name={input.name}
                     >
                       {input.options.map((option) => (
-                        <option key={option.value} value={option.value}>
+                        <option className='cursor-pointer' key={option.value} value={option.value}>
                           {option.label}
                         </option>
                       ))}
@@ -137,7 +137,7 @@ export default function reserve() {
              </>
               ))}
 
-              <button className="  text-black p-3 my-5  text-xl  font-bold   bg-yellow-300 w-10/12   rounded ">
+              <button className=" submitBtn  text-black p-3 my-5  text-xl  font-bold   bg-yellow-300 w-10/12   rounded ">
                 Submit
               </button>
             </form>

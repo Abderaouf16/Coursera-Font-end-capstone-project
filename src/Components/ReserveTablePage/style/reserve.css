@@ -15,109 +15,97 @@
   --col-red: #c32300;
 }
 
-.reserve-container{
+.reserve-container {
   width: 70vw;
-  
-  margin:2rem auto;
-  
+
+  margin: 2rem auto;
+
   display: flex;
+}
+
+.restaurantTable {
+  flex: 1;
+  justify-content: center;
+  justify-content: center;
+  border-radius: 15px;
   
+}
+form {
+  display: flex;
+  background-color: #495e57;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px 0;
+  
+}
+.reserve-form {
+  flex: 1;
+}
+.submitBtn{
+  transition: 0.3s ease-in-out;
+
+}
+.submitBtn:hover{
+  background-color: black;
+  color: var(--col-yellow);
+}
+
+@media (max-width: 600px) {
+  .reserve-container {
+    width: 90vw;
+
+    margin: 2rem auto;
+
+    flex-direction: column;
   }
 
-
-  .restaurantTable{
+  .restaurantTable {
     flex: 1;
     justify-content: center;
-justify-content: center;
-border-radius: 15px;
-
-}
-form{
-  display: flex;
-  background-color: #495e57;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-  border-radius: 15px;
-  
-}
-.reserve-form{
-flex: 1;
-}
-
-
-@media (max-width:600px) {
-.reserve-container{
-width: 90vw;
-
-margin:2rem auto;
-
-flex-direction: column;
-
-}
-
-.restaurantTable{
-    flex: 1;
     justify-content: center;
-justify-content: center;
-}
-form{
-  display: flex;
-  background-color: #495e57;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-  border-radius: 15px;
-  
-}
-.reserve-form{
+  }
+  form {
+    display: flex;
+    background-color: #495e57;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  .reserve-form {
     display: none;
-    
-}
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
   /* Your styles go here */
-  .reserve-container{
+  .reserve-container {
     width: 70vw;
-    
-    }
-    .reserve-form{
-      display: none;
-      
+  }
+  .reserve-form {
+    display: none;
   }
 }
 
-@media (min-width:1000px){
-
-  .reserve-container{
+@media (min-width: 1000px) {
+  .reserve-container {
     width: 80vw;
-    
-    margin:2rem auto;
-    
+
+    margin: 2rem auto;
+
     display: flex;
-    
-    }
-  .restaurantTable{
-    flex: 1;
-  
-
-}
-.reserve-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   }
-
+  .restaurantTable {
+    flex: 1;
+  }
+  .reserve-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
-
-  
-
-
-
-  
- 

@@ -1,7 +1,9 @@
 input {
   padding: 12px;
-
+  cursor: pointer;
 }
+
+
 label {
   font-size: 12px;
 }
