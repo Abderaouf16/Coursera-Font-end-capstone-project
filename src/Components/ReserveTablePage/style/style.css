@@ -1,25 +1,22 @@
-input {
+.reserveInput {
   padding: 12px;
   cursor: pointer;
 }
 
-
-label {
+.reserveLabel {
   font-size: 12px;
 }
-span {
+.reserveSpan {
   display: none;
   font-size: 12px;
   margin: 7px;
   color: red;
 }
 
-
-input:invalid[focused="true"] {
+.reserveInput:invalid[focused="true"] {
   border: 2px solid red;
 }
 
-
-input:invalid[focused="true"] ~ span{
+.reserveInput:invalid[focused="true"] ~ span {
   display: block;
 }

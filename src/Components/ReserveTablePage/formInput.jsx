@@ -12,16 +12,16 @@ export default function formInput(props) {
   return (
     <>
     <div className="  w-10/12 flex flex-col">
-      <label className="  my-5 text-white  text-base font-medium " >{label}</label>
+      <label className=" reserveLabel  my-5 text-white  text-base font-medium " >{label}</label>
       <input 
       {...inputProps}
       onChange={onChange}
-      className="w-full rounded  p-3 "
+      className= " reserveInput w-full rounded  p-3 "
       focused={focused.toString()}
       onBlur={handeleFocused}
       />
 
-      <span className='  text-base text-red-400'>{errorMessage}</span>
+      <span className=' reserveSpan  text-base text-red-400'>{errorMessage}</span>
     </div>
       
   

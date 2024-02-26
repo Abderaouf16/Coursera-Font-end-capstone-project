@@ -28,13 +28,7 @@ export default function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="#">Order</NavLink>
-            </li>
-            <li>
               <NavLink to="#">Menu</NavLink>
-            </li>
-            <li>
-              <NavLink to="#">Pricing</NavLink>
             </li>
             <li>
               <NavLink to="#">About us</NavLink>
@@ -55,8 +49,8 @@ export default function Header() {
         </div>
 
         <div className="orderNow_btn">
-          <NavLink className="" to="#">
-            Order Now
+          <NavLink className="" to="/ReserveTable">
+            Reservations
           </NavLink>
         </div>
       </div>

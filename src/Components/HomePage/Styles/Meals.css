@@ -25,7 +25,7 @@
   margin-bottom: 4rem;
 }
 .menu_section-container {
-  width: 80%;
+  width: 95%;
 }
 
 .menu-section-title {
@@ -85,14 +85,13 @@
   text-align: center;
   width: 65%;
   background-color: var(--col-yellow);
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 15px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--col-dark);
   transition: 0.3s ease-in-out;
 }
-
 .card-btn:hover {
   background-color: black;
   color: var(--col-yellow);
@@ -130,9 +129,6 @@
     height: 150px;
   }
 
-  .card-btn a {
-    width: 70%;
-  }
   .menu_section-container {
     width: 100%;
   }

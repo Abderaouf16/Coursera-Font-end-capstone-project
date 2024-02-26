@@ -30,7 +30,7 @@
   border-radius: 15px;
   
 }
-form {
+.reserveForm {
   display: flex;
   background-color: #495e57;
   flex-direction: column;
@@ -67,7 +67,7 @@ form {
     justify-content: center;
     justify-content: center;
   }
-  form {
+  .reserveForm {
     display: flex;
     background-color: #495e57;
     flex-direction: column;
