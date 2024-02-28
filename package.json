@@ -1,6 +1,6 @@
 {
   "name": "little-lemon-website-capstone-project",
-  "homepage": "https://morganwestcoding.github.io/morgan-west-portfolio",
+  "homepage": "https://abderaouf16.github.io/Coursera-Font-end-capstone-project-",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
