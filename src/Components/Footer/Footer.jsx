@@ -6,11 +6,11 @@ import "./footer.css";
 export default function Footer() {
   return (
     <>
-      <div class="reviews-curve">
+      <div className="reviews-curve">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
           <path
             fill="#495e57"
-            fill-opacity="1"
+            fillOpacity="1"
             d="M0,96L80,80C160,64,320,32,480,53.3C640,75,800,149,960,154.7C1120,160,1280,96,1360,64L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
@@ -47,7 +47,7 @@ export default function Footer() {
             <div className="copyRights">
               <h1>
                 © Copyright 2024 Powered By
-                <a href="https://www.linkedin.com/in/abderaouf-khamoum-657527260/">
+                <a className='px-1' href="https://www.linkedin.com/in/abderaouf-khamoum-657527260/">
                   Khamoum Abderraouf
                 </a>
               </h1>
