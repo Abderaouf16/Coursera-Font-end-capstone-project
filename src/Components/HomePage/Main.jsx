@@ -4,7 +4,7 @@ import lemonDessert from "../assets/lemonDessert.jpeg";
 import bruschetta from "../assets/bruschetta.jpg";
 import { NavLink } from "react-router-dom";
 import "./Styles/Meals.css";
-import {useMealContext} from '../Context/MealContext'
+import { useMealContext } from "../Context/MealContext";
 
 export default function order() {
   const meals = [
@@ -34,10 +34,14 @@ export default function order() {
     },
   ];
 
-  const {setMeal} = useMealContext()
+  const { setMeal } = useMealContext();
 
   const handleOrderClick = (meal) => {
-      setMeal(meal)
+    setMeal(meal);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // You can use "auto" for instant scrolling
+    });
   };
   return (
     <>
@@ -57,12 +61,13 @@ export default function order() {
                   <p>{meal.price}</p>
                 </div>
                 <p className="card-text"> {meal.mealDescription} </p>
-                <NavLink className="card-btn"
+                <NavLink
+                  className="card-btn"
                   onClick={() => handleOrderClick(meal)}
-                 to={{
-              pathname: "/OrderMeal",
-                 }}
-                 >
+                  to={{
+                    pathname: "/OrderMeal",
+                  }}
+                >
                   Order Now
                 </NavLink>
               </div>

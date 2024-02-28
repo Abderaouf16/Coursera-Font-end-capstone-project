@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { NavLink as RouterNavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 import "./Header.css";
-import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.jpg";
-import "./Header.css";
 import Headroom from "react-headroom";
 
 export default function Header() {
@@ -15,23 +15,27 @@ export default function Header() {
   return (
     <div className="header">
       <div className="header1">
-        <NavLink to="/">
+        <RouterNavLink to="/">
           <img src={logo} className="header_img" alt="Logo" />
-        </NavLink>
+        </RouterNavLink>
         <div
           className={`header_container ${isMobileMenuOpen ? "mobileView" : ""}`}
         >
           <ul>
             <li>
-              <NavLink className="navlink" to="/">
+              <RouterNavLink className="navlink" to="/">
                 Home
+              </RouterNavLink>
+            </li>
+            <li>
+            <NavLink smooth className="navlink" to="/#Menu">
+                Menu
               </NavLink>
-            </li>
+                          </li>
             <li>
-              <NavLink to="#">Menu</NavLink>
-            </li>
-            <li>
-              <NavLink to="#">About us</NavLink>
+              <NavLink smooth className="navlink" to={`${location.pathname}#footer`}>
+                About us
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -49,9 +53,9 @@ export default function Header() {
         </div>
 
         <div className="orderNow_btn">
-          <NavLink className="" to="/ReserveTable">
+          <RouterNavLink className="" to="/ReserveTable">
             Reservations
-          </NavLink>
+          </RouterNavLink>
         </div>
       </div>
     </div>

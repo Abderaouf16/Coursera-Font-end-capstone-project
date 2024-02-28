@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
 
-
 export default function ConfirmeOrder() {
   const { selectedMeal } = useMealContext();
   const [value, setValue] = React.useState("1");
@@ -58,29 +57,46 @@ export default function ConfirmeOrder() {
                 <h1 className="  text-xl  text-bold my-4 text-center ">
                   Start making your day with an amazing meal!{" "}
                 </h1>
-                <p className="my-3">Meal: {selectedMeal.mealName}</p>
-                <p className="my-3">Price: {selectedMeal.price}</p>
+                <p className="my-3 text-bold">
+                  Meal:
+                  <span className="text-yellow-400 px-1">
+                    {selectedMeal.mealName}
+                  </span>
+                </p>
+                <p className="my-3 text-bold">
+                  Price:
+                  <span className="text-yellow-400 px-1">
+                    {selectedMeal.price}
+                  </span>{" "}
+                </p>
                 <form action="" onSubmit={handeleSubmit}>
                   <div className="my-3">
-                    <label className="my-3" htmlFor="">
+                    <label className="my-3 text-bold" htmlFor="">
                       Quantity:
                     </label>
                     <div className="flex justify-center">
                       <HStack className="my-3 " maxW="150px">
-                        <Button onClick={handleIncrement}>+</Button>
-                        <Input className='text-center' value={quantity} readOnly />
                         <Button onClick={handleDecrement}>-</Button>
+                        <Input
+                          className="text-center"
+                          value={quantity}
+                          readOnly
+                        />
+                        <Button onClick={handleIncrement}>+</Button>
                       </HStack>
                     </div>
                   </div>
                   <div className="w-10/12">
-                  <label className=" mino my-5" htmlFor="">
+                    <label className=" mino my-5 text-bold" htmlFor="">
                       Location:
                     </label>
-                    <Input className="  my-6 w-2/5" placeholder='insert location' />
+                    <Input
+                      className="  my-6 w-2/5"
+                      placeholder="insert location"
+                    />
                   </div>
                   <div className="my-3">
-                    <label className="my-3" htmlFor="">
+                    <label className="my-3 text-bold" htmlFor="">
                       Delivery:
                     </label>
                     <div className="flex justify-center">

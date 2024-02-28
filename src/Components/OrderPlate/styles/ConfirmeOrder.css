@@ -15,10 +15,10 @@
   --col-red: #c32300;
 }
 
-.confirmeOrderContainer{
+.confirmeOrderContainer {
   height: auto;
-  width: 75vw;
-height: 83vh;
+  width: 55vw;
+  height: 83vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,13 +28,11 @@ height: 83vh;
   border-radius: 20px;
 }
 
-@media(max-width: 800px){
-  .confirmeOrderContainer{
-    height:  auto;
+@media (max-width: 800px) {
+  .confirmeOrderContainer {
+    height: auto;
   }
-  .imgContainer{
+  .imgContainer {
     display: none;
   }
 }
-
-

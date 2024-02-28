@@ -16,7 +16,7 @@ export default function Footer() {
         </svg>
       </div>
 
-      <footer className="footer">
+      <footer className="footer" id="footer">
         <div className="footer-container">
           <div className="footer-details-container">
             <div className="footer-logo">
