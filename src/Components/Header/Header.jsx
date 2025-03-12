@@ -3,7 +3,8 @@ import { NavLink as RouterNavLink } from "react-router-dom";
 import { HashLink as NavLink } from "react-router-hash-link";
 import "./Header.css";
 import logo from "../assets/logo.jpg";
-import Headroom from "react-headroom";
+import { Button } from "@chakra-ui/react"
+
 
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,24 +17,24 @@ export default function Header() {
     <div className="header">
       <div className="header1">
         <RouterNavLink to="/">
-          <img src={logo} className="header_img" alt="Logo" />
+        <h1 className="brandName">Littel Lemon</h1>
         </RouterNavLink>
         <div
           className={`header_container ${isMobileMenuOpen ? "mobileView" : ""}`}
         >
           <ul>
             <li>
-              <RouterNavLink className="navlink" to="/">
+              <RouterNavLink className="navlink cursor-pointer rounded-[100px] text-center px-6 py-3 font-medium text-black text-[17px] flex items-center justify-center" to="/">
                 Home
               </RouterNavLink>
             </li>
             <li>
-            <NavLink smooth className="navlink" to="/#Menu">
+            <NavLink smooth className="navlink cursor-pointer rounded-[100px] text-center px-6 py-3 font-medium text-black text-[17px] flex items-center justify-center" to="/#Menu">
                 Menu
               </NavLink>
                           </li>
             <li>
-              <NavLink smooth className="navlink" to={`${location.pathname}#footer`}>
+              <NavLink smooth className="navlink cursor-pointer rounded-[100px] text-center px-6 py-3 font-medium text-black text-[17px] flex items-center justify-center" to={`${location.pathname}#footer`}>
                 About us
               </NavLink>
             </li>
@@ -52,7 +53,7 @@ export default function Header() {
           </svg>
         </div>
 
-        <div className="orderNow_btn">
+        <div className=" orderNow_btn_header bg-yellow-300 cursor-pointer rounded-[10px] text-center px-6 py-3 font-medium text-black text-[17px] flex items-center justify-center ">
           <RouterNavLink className="" to="/ReserveTable">
             Reservations
           </RouterNavLink>

@@ -16,38 +16,34 @@
 }
 
 .main {
-  background-color: #495e57;
-  height: 65vh;
+  height: 80vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-top: 5rem;
+
 }
 
-.hero_container {
+/*  .hero_container {
   width: 80%;
   height: 90%;
   display: flex;
 }
-.hero_img_container {
+ .hero_img_container {
   flex: 1;
   display: flex;
   min-width: 450px;
   justify-content: center;
   align-items: center;
-}
+} 
 .hero_text-container {
-  flex: 1;
   padding: 40px;
-  display: flex;
-  align-items: center;
-  color: white;
+  color: black;
 }
 
-.hero_img_container img {
+ .hero_img_container img {
   width: 80%;
   border-radius: 20px;
-}
+} 
 
 .hero_text-container h1 {
   font-size: 45px;
@@ -58,7 +54,6 @@
 .hero_text-container p {
   font-size: 20px;
   margin: 20px;
-  font-weight: 400;
 }
 .hero_text-container button {
   font-size: 17px;
@@ -112,4 +107,10 @@
     color: white;
     text-align: center;
   }
+} */
+ 
+.abdou{
+  background-image: url('../../assets/heroImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
